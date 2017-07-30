@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<title>Bounce Loading CSS</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+
+		<link rel="stylesheet" href="./css/light.css">
+		<link rel="stylesheet" href="./css/dark.css">
+
+		<style>
+
+			body {
+				margin: 0;
+				padding: 0;
+
+				font-family: 'Open Sans', sans-serif;
+				font-size: 13px;
+			}
+
+			section {
+				width: 100%;
+				min-height: 50vh;
+				padding: 32px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				box-sizing: border-box;
+			}
+
+			section:first-child {
+				color: #FFF;
+				background-color: #212121;
+			}
+
+			.container {
+				max-width: 480px;
+			}
+
+			.preview {
+				padding: 16px;
+			}
+
+			.bounce-loading {
+				margin: auto;
+			}
+
+			code {
+				display: block;
+				width: 100%;
+				word-wrap: break-word;
+				text-align: left;
+
+				padding: 16px;
+				border: 1px solid #EEE;
+				color: #757575;
+			}
+
+			section:first-child code {
+				color: #BDBDBD;
+				border: 1px solid #424242;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<section>
+			<div class="container">
+
+				<div class="preview">
+					<div class="bounce-loading light"></div>
+				</div>
+
+				<h1>HTML</h1>
+				<code class="html">
+&lt;div class="bounce-loading light"&gt;&lt;/div&gt;
+				</code>
+
+				<h1>CSS</h1>
+				<code class="css">
+@keyframes ball-bounce{0%{transform:scale(1.2, 0.5) translateY(16px)}20%{transform:scale(1, 1)}100%{transform:scale(0.9, 1.1) translateY(-16px)}}.bounce-loading.dark{display:flex;justify-content:center;align-items:center;width:64px;height:64px;padding:8px}.bounce-loading.dark:before,.bounce-loading.dark:after{content:'';display:relative;margin:8px;width:16px;height:16px;border-radius:100%;background-color:#000;animation:ball-bounce 400ms cubic-bezier(0.2, 0.5, 0.5, 1) infinite alternate}.bounce-loading.dark:after{animation-delay:100ms}
+				</code>
+
+			</center>
+		</section>
+
+		<section>
+			<div class="container">
+
+				<div class="preview">
+					<div class="bounce-loading dark"></div>
+				</div>
+
+				<h1>HTML</h1>
+				<code class="html">
+&lt;div class="bounce-loading dark"&gt;&lt;/div&gt;
+				</code>
+
+				<h1>CSS</h1>
+				<code class="css">
+@keyframes ball-bounce{0%{transform:scale(1.2, 0.5) translateY(16px)}20%{transform:scale(1, 1)}100%{transform:scale(0.9, 1.1) translateY(-16px)}}.bounce-loading.dark{display:flex;justify-content:center;align-items:center;width:64px;height:64px;padding:8px}.bounce-loading.dark:before,.bounce-loading.dark:after{content:'';display:relative;margin:8px;width:16px;height:16px;border-radius:100%;background-color:#000;animation:ball-bounce 400ms cubic-bezier(0.2, 0.5, 0.5, 1) infinite alternate}.bounce-loading.dark:after{animation-delay:100ms}
+				</code>
+
+			</div>
+		</section>
+
+	</body>
+</html>
